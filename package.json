@@ -27,10 +27,10 @@
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
-		"publish:patch": "npm run build && npm version patch && npm publish --patch --registry $NPM_REGISTRY_PUBLISH",
-		"publish:minor": "npm run build && npm version minor && npm publish --minor --registry $NPM_REGISTRY_PUBLISH",
-		"publish:major": "npm run build && npm version major && npm publish --major --registry $NPM_REGISTRY_PUBLISH",
-		"publish:wago": "npm run build:prod && npm publish --registry $NPM_REGISTRY_PUBLISH",
+		"publish:patch": "npm version patch && npm publish --patch --registry $NPM_REGISTRY_PUBLISH",
+		"publish:minor": "npm version minor && npm publish --minor --registry $NPM_REGISTRY_PUBLISH",
+		"publish:major": "npm version major && npm publish --major --registry $NPM_REGISTRY_PUBLISH",
+		"publish:wago": "npm publish --registry $NPM_REGISTRY_PUBLISH",
 		"clean": "npx rimraf ./docs ./build ./.build.json ./.build.json"
 	},
 	"node-red": {
