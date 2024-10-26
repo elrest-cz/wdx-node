@@ -1,6 +1,6 @@
 # WDX - Node Red - Palette
 
-Node Red plugin providing services for Managing WDX.
+Node Red plugin providing services for Using WDX within Node Red application.
 
 ## Table of Contents
 
