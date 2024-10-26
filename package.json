@@ -27,23 +27,11 @@
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
-		"postbuild": "./scripts/postbuild.sh",
-		"build": "",
-		"build:prod": "",
-		"build:dev": "",
-		"docs": "npm run docs:html && npm run docs:md",
-		"docs:html": "npx typedoc --json ./docs/docs.json --pretty --options ./typedoc.json",
-		"docs:md": "npx typedoc --plugin typedoc-plugin-markdown --theme markdown --out docs",
-		"docs:all": "npx typedoc --plugin typedoc-plugin-markdown --theme markdown --out docs && npx concat-md --toc --decrease-title-levels --dir-name-as-title temp-docs > README.md && npx showdown makehtml -i README.md -o README.html && npx rimraf docs/temp",
 		"publish:patch": "npm run build && npm version patch && npm publish --patch --registry $NPM_REGISTRY_PUBLISH",
 		"publish:minor": "npm run build && npm version minor && npm publish --minor --registry $NPM_REGISTRY_PUBLISH",
 		"publish:major": "npm run build && npm version major && npm publish --major --registry $NPM_REGISTRY_PUBLISH",
 		"publish:wago": "npm run build:prod && npm publish --registry $NPM_REGISTRY_PUBLISH",
-		"clean": "npx rimraf ./docs ./build ./.build.json ./.build.json",
-		"cover": "npm run cover:unit && npm run cover:integration && npm run cover:report",
-		"cover:unit": "nyc --silent npm run test:unit",
-		"cover:integration": "nyc --silent --no-clean npm run test:integration",
-		"cover:report": "nyc report --reporter=lcov --reporter=text"
+		"clean": "npx rimraf ./docs ./build ./.build.json ./.build.json"
 	},
 	"node-red": {
 		"nodes": {
