@@ -1,8 +1,10 @@
 version: "3.7"
 
 services:
-  node-red:
+
+  node-red-X86_64:
     image: nodered/node-red:latest
+    container_name: node-red
     environment:
       - TZ=Europe/Berlin
     ports:
@@ -10,6 +12,23 @@ services:
 
     volumes:
       - node-red-data:/data
+
+    profiles:
+    - X86_64
+
+  node-red-arm32v7:
+    image: nodered/node-red:latest
+    container_name: node-red
+    environment:
+      - TZ=Europe/Berlin
+    ports:
+      - "1880:1880"
+
+    volumes:
+      - node-red-data:/data
+
+    profiles:
+    - arm32v7
 
 volumes:
   node-red-data:
