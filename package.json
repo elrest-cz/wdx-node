@@ -7,7 +7,7 @@
 		"Node Red",
 		"Palette"
 	],
-	"license": "(C) Copyright 2024 Elrest Automations Systeme GMBH",
+	"license": "MIT",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
 	"repository": {
 		"type": "git",
