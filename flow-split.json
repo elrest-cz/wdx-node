@@ -1,0 +1,104 @@
+[
+    {
+        "id": "8ccddb9a.a55f38",
+        "type": "inject",
+        "z": "ac14500e.2c57d",
+        "name": "temperature",
+        "topic": "temperature",
+        "payload": "10",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 1760,
+        "wires": [
+            [
+                "47b769c5.cb0e28"
+            ]
+        ]
+    },
+    {
+        "id": "47b769c5.cb0e28",
+        "type": "join",
+        "z": "ac14500e.2c57d",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 310,
+        "y": 1800,
+        "wires": [
+            [
+                "f9afb265.b11b7"
+            ]
+        ]
+    },
+    {
+        "id": "f9afb265.b11b7",
+        "type": "debug",
+        "z": "ac14500e.2c57d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 470,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "2d269127.4f04ce",
+        "type": "inject",
+        "z": "ac14500e.2c57d",
+        "name": "humidity",
+        "topic": "humidity",
+        "payload": "",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 1800,
+        "wires": [
+            [
+                "47b769c5.cb0e28"
+            ]
+        ]
+    },
+    {
+        "id": "d6fbe805.0e4628",
+        "type": "inject",
+        "z": "ac14500e.2c57d",
+        "name": "pressure",
+        "topic": "pressure",
+        "payload": "999",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 1840,
+        "wires": [
+            [
+                "47b769c5.cb0e28"
+            ]
+        ]
+    }
+]
