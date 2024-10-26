@@ -39,17 +39,14 @@
 		}
 	},
 	"devDependencies": {
-		"@types/node": "^20.10.1",
 		"@types/uuid": "^9.0.x",
 		"concat-md": "^0.5.1",
-		"nodemon": "^3.0.1",
 		"nyc": "^15.1.0",
 		"rimraf": "^5.0.5",
 		"showdown": "^2.1.0",
 		"ts-node": "^10.9.2",
 		"typedoc": "^0.25.7",
-		"typedoc-plugin-markdown": "^3.17.1",
-		"typescript": "^5.3.3"
+		"typedoc-plugin-markdown": "^3.17.1"
 	},
 	"dependencies": {
 		"@types/ws": "^8.5.8",
