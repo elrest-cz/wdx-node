@@ -36,10 +36,11 @@
 	},
 	"node-red": {
 		"nodes": {
-			"runtime": "runtime.js"
+			"wdx": "wdx.js"
 		}
 	},
 	"devDependencies": {
+		"@types/ws": "^8.5.8",
 		"@types/uuid": "^9.0.x",
 		"concat-md": "^0.5.1",
 		"nyc": "^15.1.0",
@@ -50,7 +51,6 @@
 		"typedoc-plugin-markdown": "^3.17.1"
 	},
 	"dependencies": {
-		"@types/ws": "^8.5.8",
 		"@wago/wdx-schema": "~x.x.x",
 		"@wago/wdx-ws-client-js": "~x.x.x",
 		"openapi-red": "^2.1.1",
