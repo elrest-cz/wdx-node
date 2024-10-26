@@ -1,0 +1,15 @@
+**src
+**logs
+.settings
+.project
+tsconfig.json
+typedoc.json
+**yarn-error.log
+**yarn.lock
+.build.json
+.gitlab-ci.yml
+.git
+package-lock.json
+.eslintrc.js
+tsconfig.tsbuildinfo
+scripts
