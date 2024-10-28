@@ -1,17 +1,44 @@
 # WDX - Node Red - Palette
 
-Node Red plugin providing services for Using WDX within Node Red application.
+Node Red plugin WDX Palette with nodes implementing WDX WS Interface communication within Node Red application.
 
 ## Table of Contents
 
+- [Requirements](#requirements)
 - [Installation](#installation)
+  - [Node RED Palette Management Installation](#node-red-palette-management-installation)
+  - [Node RED Manual Package Installation](#node-red-manual-package-installation)
 - [Usage](#usage)
-  - [Using WDX Nodes Palette](#using-wdx-nodes-palette)
+- [Examples](#examples)
 - [License](#license)
+
+
+## Requirements
++ WDX Runtime - Docker or local WDX runtime installation.
++ Node-RED editor.
++ Node-RED WDX Pallete.
+
 
 ## Installation
 
-To install the library, use npm or yarn:
+
+### Node RED Palette Management Installation
+
+Open your Node-RED installation UI palette management and search for package @wago/node-red-wdx-palette.
+
+
+![image info](./assets/images/palatte-management.png)
+
+
+### Node RED Manual Package installation
+
+Navigate your console to the Node-RED data directory:
+
+```bash
+cd ~/.node-red/data # Directory would differ based on your Node-RED installation
+```
+
+Install the library, using npm or yarn:
 
 ```bash
 npm install @wago/node-red-wdx-palette
@@ -23,11 +50,20 @@ or
 yarn add @wago/node-red-wdx-palette
 ```
 
+
 ## Usage
 
-### Using WDX Nodes Palette
+To use WDX nodes in your Node-RED flow, follow these steps:
 
-See [example project](https://github.com/elrest-cz/wdx-node-red-examples.git).
+1. Install the `@wago/node-red-wdx-palette` package in your Node-RED project.
+2. Import the required nodes into your flow and configure the necessary WDX WS Client options.
+
+![WDX Nodes - WS Client Configuration](./assets/images/ws-client-config.png)
+
+
+## Examples
+
+For more examples see [example project](https://github.com/elrest-cz/wdx-node-red-examples.git).
 
 ## License
 
