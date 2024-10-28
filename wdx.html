@@ -21,13 +21,7 @@
 				required: true,
 				label: 'Server',
 				validate: RED.validators.regex(/^((?!\/debug\/ws).)*$/)
-			},
-			proxyUrl: {
-				value: '',
-				required: true,
-				label: 'Proxy Server',
-				validate: RED.validators.regex(/^((?!\/debug\/ws).)*$/)
-			},
+			}
 		},
 		inputs: 0,
 		outputs: 0,
@@ -1269,15 +1263,7 @@
 			<i class="fa fa-bookmark"></i>
 			<span>Url</span>
 		</label>
-		<input id="node-config-input-url" type="text" placeholder="ws://localhost:82">
-	</div>
-
-	<div class="form-row">
-		<label for="node-config-input-proxyUrl">
-			<i class="fa fa-bookmark"></i>
-			<span>Proxy Url</span>
-		</label>
-		<input id="node-config-input-proxyUrl" type="text" placeholder="ws://localhost:4282">
+		<input id="node-config-input-url" type="text" placeholder="ws://localhost:8081">
 	</div>
 
 </script>
