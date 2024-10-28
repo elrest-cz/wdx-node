@@ -2,11 +2,13 @@
 	"name": "@wago/node-red-wdx-palette",
 	"description": "WAGO - Node RED - WDX Node Palette",
 	"keywords": [
+		"node-red",
 		"wago",
 		"wdx",
 		"palette",
-		"node-red",
-		"plc"
+		"plc",
+		"codesys",
+		"automation"
 	],
 	"license": "MIT",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
