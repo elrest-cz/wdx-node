@@ -485,7 +485,6 @@
 				value: ""
 			},
 			schema: {
-				value: 1
 			},
 		},
 		inputs: 1,
@@ -841,7 +840,7 @@
 
 	/**
 	 * Alarms
-	 */
+	
 	RED.nodes.registerType('edesign.runtime.alarm.list', {
 		category: 'WDX Alarm',
 		color: '#FFFFFF',
@@ -1059,11 +1058,11 @@
 				startNode(this);
 			},
 		},
-	});
+	}); */
 
 	/**
 	 * Trends
-	 */
+	 
 	RED.nodes.registerType('edesign.runtime.trend.list', {
 		category: 'WDX Trend',
 		color: '#FFFFFF',
@@ -1260,7 +1259,7 @@
 				startNode(this);
 			},
 		},
-	});
+	});*/
 </script>
 
 <script type="text/html" data-template-name="edesign.runtime.web-socket">
@@ -1305,10 +1304,14 @@
 	<div class="form-row data-path" style="height: calc(100% - 40px);">
 
 		<label for="node-input-path"><i class="fa fa-tag"></i>Path</label>
-		<div style="width: calc(100% - 110px);display: inline-flex;">
-			<input type="text" id="node-input-path" class="schema-data-path" placeholder="Data path">
+		
+		<input type="text" id="node-input-path" class="schema-data-path" placeholder="Data path">
+
+		<!--div style="width: calc(100% - 110px);display: inline-flex;">
+				<input type="text" id="node-input-path" class="schema-data-path" placeholder="Data path">
+
 			<a class="red-ui-button browser" style="margin-left: 10px;display: inline-block;"><i class="fa fa-list"></i></a>
-		</div>
+		</div -->
 	</div>
 
 </script>
@@ -1329,6 +1332,12 @@
 		</label>
 		
 		<input type="text" id="node-input-client">
+	</div>
+
+
+	<div class="form-row">
+		<label for="node-input-schema"><i class="fa fa-tag"></i>Schema</label>
+		<input type="text" id="node-input-schema" placeholder="Schema JSON">
 	</div>
 
 </script>
@@ -1366,7 +1375,6 @@
 	<div class="form-row">
 		<label for="node-input-path"><i class="fa fa-tag"></i>Path</label>
 		<input type="text" id="node-input-path" placeholder="Data path">
-		<input type="button" id="node-input-path-browse" value="Browse" />
 	</div>
 
 	<div class="form-row">
