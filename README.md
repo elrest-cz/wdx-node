@@ -16,11 +16,9 @@ Node Red plugin WDX Palette with nodes implementing WDX WS Interface communicati
 ## Requirements
 + WDX Runtime - Docker or local WDX runtime installation.
 + Node-RED editor.
-+ Node-RED WDX Pallete.
 
 
 ## Installation
-
 
 ### Node RED Palette Management Installation
 
