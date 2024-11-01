@@ -26,7 +26,7 @@
 			"email": "slavomir.sidor@elrest.cz"
 		}
 	],
-	"version": "7.1.2",
+	"version": "7.1.3",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
@@ -36,8 +36,7 @@
 		"publish:wago": "npm publish --registry $NPM_REGISTRY_PUBLISH",
 		"clean": "npx rimraf ./docs ./build ./.build.json ./.build.json"
 	},
-	"node-red": {
-	},
+	"node-red": {},
 	"devDependencies": {
 		"@types/uuid": "^9.0.x",
 		"@types/ws": "^8.5.8",
