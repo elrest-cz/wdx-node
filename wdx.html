@@ -569,8 +569,8 @@
 		outputs: 3,
 		outputLabels: ["Success", "Error", "Completed"],
 		icon: "WagoLogo.svg",
-		paletteLabel: "Monitor - Value",
-		label: "WDX Data - Monitor - Value",
+		paletteLabel: "Monitor Value",
+		label: "WDX Data - Monitor Value",
 		button: {
 			onclick: function () {
 				startNode(this);
@@ -598,8 +598,8 @@
 		outputs: 3,
 		outputLabels: ["Success", "Error", "Completed"],
 		icon: "WagoLogo.svg",
-		paletteLabel: " Monitor - Schema",
-		label: "WDX Data - Monitor - Schema",
+		paletteLabel: " Monitor Schema",
+		label: "WDX Data - Monitor Schema",
 		button: {
 			onclick: function () {
 				startNode(this);
@@ -1303,9 +1303,14 @@
 </script>
 
 <script type="text/html" data-help-name="edesign.runtime.data.get-schema">
-	<h2>eDesign Runtime - Data - Get Schema</h2>
+	<h2>WDX Data - Get Schema Node</h2>
 	<p>Retrieves data schema</p>
 	<h2>Parameters</h2>
+	<ul>
+        <li><code>client</code>: Web Socket Client ID</li>
+        <li><code>level</code>: Data level (1 default)</li>
+        <li><code>path</code>: Data path (e.g. "Virtual-virtual-store.test")</li>
+    </ul>
 </script>
 
 <script type="text/html" data-template-name="edesign.runtime.data.set-schema">
